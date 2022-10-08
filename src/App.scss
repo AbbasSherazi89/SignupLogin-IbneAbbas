@@ -1,49 +1,48 @@
-.signup-fluidcontainer{
-    .signup-container{
-        border-radius: 10px;
-        background-color:rgb(60, 59, 59);
-        margin:05rem 10rem;
-        color: white;
-    }
-    .sideimg{
-        height: 100%;
-    }
-    .center-col{
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-    }
-    .input-width{
-        width: 100%;
-    }
+.signup-fluidcontainer {
+  .signup-container {
+    // border-radius: 10px;
+    background-color: rgb(60, 59, 59);
+    margin: 1rem 2rem;
+    color: white;
+  }
+  .sideimg {
+    height: 100%;
+    width: 100%;
+  }
+  .input-width {
+    width: 100%;
+  }
 }
 
-.login-fluidcontainer{
-    .login-container{
-        border-radius: 10px;
-        background-color:rgb(60, 59, 59);
-        margin:05rem 10rem;
-        color: white;
-    }
-    .sideimg{
-        height: 100%;
-    }
-    .logininput-width{
-        width: 20rem;
-    }
-    .login-btn{
-        width: 20rem;
-    }
-    .icon-google{
-        font-size: 25px;
-    }
+.login-fluidcontainer {
+  .login-container {
+    background-color: rgb(60, 59, 59);
+    margin: 1rem 2rem;
+    color: white;
+  }
+  .sideimg {
+    height: 100%;
+    width: 100%;
+  }
+  .logininput-width {
+    width: 20rem;
+  }
+  .login-btn {
+    width: 20rem;
+  }
+  .icon-google {
+    font-size: 25px;
+  }
 }
-@media only screen and (max-width:850px){
-    .logininput-width{
-        max-width: 100%;
-    }
-    .login-btn{
-       max-width: 100%;
-    }
+
+@media only screen and (max-width: 850px) {
+  .logininput-width {
+    max-width: 100%;
+  }
+  .login-btn {
+    max-width: 100%;
+  }
+  .nav-item-login {
+    margin-left: 0rem;
+  }
 }
