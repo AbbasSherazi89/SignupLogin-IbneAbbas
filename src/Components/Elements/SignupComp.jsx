@@ -77,7 +77,7 @@ const SignupComp = () => {
 
               <button className="btn btn-primary mt-3 ms-2" type="submit"> Register </button>
               </form>
-                   <p className="fw-bold pt-3 pb-3">Already have an account? <Link to="/login" className="text-primary">Login</Link> </p> 
+                   <p className="fw-bold pt-3 pb-3">Already have an account? <Link to="/" className="text-primary text-decoration-none">Login</Link> </p> 
             </div>
             <div className="col-md-1"></div>
           </div>

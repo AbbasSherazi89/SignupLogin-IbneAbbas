@@ -24,7 +24,7 @@ const Header = () => {
             <Link className="nav-item nav-link fw-bold text-white rounded-3 border" to="/signup">
               Signup
             </Link>
-            <Link className="nav-item nav-link fw-bold text-white rounded-4 border ms-3" to="/login">
+            <Link className="nav-item nav-link fw-bold text-white rounded-4 border ms-3" to="/">
               Login
             </Link>
           </div>
