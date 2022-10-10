@@ -1,3 +1,11 @@
+.nav-item:hover {
+  background-color: rgb(60, 59, 59) !important;
+}
+
+.last-link:hover{
+    color: chocolate !important;
+}
+
 .signup-fluidcontainer {
   .signup-container {
     // border-radius: 10px;
@@ -34,6 +42,8 @@
     font-size: 25px;
   }
 }
+
+
 
 @media only screen and (max-width: 850px) {
   .logininput-width {

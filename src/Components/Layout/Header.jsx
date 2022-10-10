@@ -38,6 +38,12 @@ const Header = () => {
               >
                 Login
               </Link>
+              <Link
+                className="nav-item nav-link fw-bold text-white rounded-3 border ms-3 mt-2"
+                to="/validation2"
+              >
+                Form Validation
+              </Link>
             </div>
           </div>
         </div>

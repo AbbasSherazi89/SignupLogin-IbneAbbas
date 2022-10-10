@@ -1,6 +1,5 @@
 import {React, useState} from "react";
 import { Link } from "react-router-dom";
-
 const SignupComp = () => {
  
     const [fname, setfname] = useState('');
@@ -13,12 +12,11 @@ const SignupComp = () => {
     const handleSubmit=(event)=>{
             event.preventDefault();
             const data=[fname,lname,phone,email,pass,cpass];
-            console.log(data);   
+            localStorage.setItem("Local Storage data", JSON.stringify(data));
+            sessionStorage.setItem("Session Storage data", JSON.stringify(data));
+            // console.log(data);   
     }
-    // const myFunction=(e)=> {
-    //   e.preventDefault();
-    //   alert("I am an alert box!");
-    // }
+
   return (
     <>
       <div className="container signup-fluidcontainer">
@@ -31,7 +29,6 @@ const SignupComp = () => {
             <div className="col-md-7 signup-col2">
             <h2 className="pt-4 ps-3">Register</h2>
             <p className="pt-3 ps-3 pb-2">Let's get you all setup so you can verify your personal account and begin setting up your profile</p>
-                <form onSubmit={handleSubmit}>
               <div className="container">
 
                 <div className="row mt-3">
@@ -77,9 +74,8 @@ const SignupComp = () => {
                     <label className="ps-2" htmlFor="">I agree to all the <a className="text-decoration-none" href="/"> Terms, Privacy</a> and <a className="text-decoration-none"  href="/">Fees.</a></label>
               </div>
 
-              <button className="btn btn-primary mt-3 ms-2" onClick={() => alert("Registered!")}> Register </button>
-              </form>
-                   <p className="fw-bold pt-3 pb-3">Already have an account? <Link to="/" className="text-primary text-decoration-none">Login</Link> </p> 
+              <button className="btn btn-primary mt-3 ms-2" onClick={handleSubmit}> Register </button>
+                   <p className="fw-bold pt-3 pb-3">Already have an account? <Link to="/" className="text-primary text-decoration-none last-link">Login</Link> </p> 
             </div>
             <div className="col-md-1"></div>
           </div>
